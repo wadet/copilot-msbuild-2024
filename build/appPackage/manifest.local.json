@@ -1,0 +1,56 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+    "version": "1.1.0",
+    "manifestVersion": "1.15",
+    "id": "ec7a95ab-cfa2-4746-ab28-9df1059c1648",
+    "packageName": "com.package.name",
+    "name": {
+        "short": "TeamsAzureOpenAI-local",
+        "full": "Teams Azure OpenAI"
+    },
+    "developer": {
+        "name": "TeamsAzureOpenAI",
+        "mpnId": "",
+        "websiteUrl": "https://microsoft.com",
+        "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+        "termsOfUseUrl": "https://www.microsoft.com/legal/terms-of-use"
+    },
+    "description": {
+        "short": "Sample bot that can do RAG through Azure AI Search",
+        "full": "Sample bot that can do RAG through Azure AI Search"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "conversations",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "b6872b90-f8a1-4a57-946a-e950554f05fa",
+            "scopes": [
+                "personal",
+                "team",
+                "groupChat"
+            ],
+            "isNotificationOnly": false,
+            "supportsCalling": false,
+            "supportsVideo": false,
+            "supportsFiles": false
+        }
+    ],
+    "validDomains": []
+}
